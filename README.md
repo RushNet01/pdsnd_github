@@ -7,7 +7,7 @@ November 14, 2023
 Version Control Project
 
 ### Description
-Describe what your project is about and what it does
+simulation of a realistic workflow to refactor the previous BikeShare project using Git. 
 
 ### Files used
 Include the files used
