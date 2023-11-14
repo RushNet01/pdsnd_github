@@ -48,19 +48,37 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
+    print_lines()
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
+
     # display the most common month
+    month = df['month'].value_counts().index[0]
+    
+    print()
+    print('----- Most Common Month -----')
+    print(month)
 
 
     # display the most common day of week
+    dow = df['dow'].value_counts().index[0]
+
+    print()
+    print('----- Most Common Day of the Week -----')
+    print(dow)
 
 
     # display the most common start hour
+    hour = df['hour'].value_counts().index[0]
+
+    print()
+    print('----- Most Common Start Hour -----')
+    print(hour)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+    print_lines()
     print('-'*40)
 
 
